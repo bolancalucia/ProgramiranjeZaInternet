@@ -1,0 +1,98 @@
+body {
+    font-family: Georgia;
+}
+
+/*# - Select all elements by id*/
+#info-paragraph {
+    background-color: gray;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* Select all elements of type strong
+   that are direct children of an element
+   with id info-paragraph
+*/
+#info-paragraph > strong {
+    border: 2px solid red;
+    background-color: pink;
+    padding: 0 4px;
+    color: white;
+}
+
+#info-paragraph > em {
+    color: green;
+    font-weight: bolder;
+}
+
+body > img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+/* > child of*/
+#subjects-table > thead {
+    background-color: lightgray;
+}
+
+#subjects-table,
+#subjects-table th, /*Space -> descendent*/
+#subjects-table td  
+{
+    border: 2px solid black;
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+
+/*. dohvati sve elemente neke klase*/
+.professor-cell {
+    color: green;
+}
+
+/*. Fetch all elements with a class*/
+.senior-professor-cell {
+    font-weight: bolder;
+}
+
+/* Out of all table rows choose only even*/
+#subjects-table > tbody > tr:nth-child(2n) {
+    background-color: lightblue;
+}
+
+/* Out of all table rows choose only odd*/
+#subjects-table > tbody > tr:nth-child(2n+1) {
+    background-color: lightcoral;
+}
+
+#login-form {
+    margin: 10px;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+/*Select input element with type attribute equal to "text"*/
+#login-form input[type="text"] {
+    color: green;
+}
+
+#login-form input[type="password"] {
+    color: red;
+}
+
+/*On all input elements, active on mouse over*/
+input:hover {
+    border: 2px solid yellow;
+}
+
+/*On all input elements, active on mouse down*/
+input:active {
+    border: 2px solid red;
+}
+
+/*On all input elements, active on input focus*/
+input:focus {
+    border: 2px solid blue;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head> <!-- META INFORMACIJE O STRANICI -->
+        <meta charset="utf-8">
+        <title>Vježba 2 - PZI (CSS)</title>
+        <link rel="stylesheet" href="styles/style.css"/>    
+    </head>
+    
+    <body> <!-- SVE ŠTA SE PRIKAZUJE NA STRANICI-->
+        <h1>Programiranje za Internet - Uvod u HTML</h1>
+        
+        <p id="info-paragraph"> 
+            <strong>Josip Maras</strong> <em>PZI</em>
+            Moji položeni <a href="#Predmeti">predmeti</a>.
+            Lorem ipsum dolor sit amet,
+            consectetur <strong>adipiscing</strong> elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in <em>voluptate</em> velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non provident.
+        </p>
+        
+        <p>Hello World</p>
+        
+        <!-- samozatvarajući element <element/> jer nema sadržaja-->
+        <img src="http://hotelbolero.gaussx.com/wp-content/uploads/2014/05/sibenik2.png" alt="Sibenik 1"/> 
+        <br/>
+        <img src="images/sibenik_001.jpg" alt="Sibenik 2"/>
+        
+        <hr/>
+        
+        <h2>Životopis</h2>
+        
+        <ul>
+            <li>Rođen(a) u <a href="http://www.split.hr/Default.aspx">gradu</a></li>    
+            <li>Završena srednja <a href="http://gav.hr/" target="_blank">škola</a>.</li>    
+            <li>Trenutno 3 godina FESB-a</li>    
+        </ul>
+        
+        <h2 id="Predmeti">Položeni predmeti</h2>
+        
+        <table id="subjects-table"> 
+            <thead>
+                <tr>
+                    <th>Predmet </th> <!-- ćelija zaglavlja -->
+                    <th>Profesor</th>
+                    <th>Ocjena</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>Matematika 1</td>
+                    <td class="professor-cell">Josipa Barić</td>
+                    <td>5</td>
+                </tr>
+                
+                <tr>
+                    <td>Fizika 1</td>
+                    <!-- An element can have multiple classes, simply separate them with a space! -->
+                    <td class="professor-cell senior-professor-cell">Ivica Puljak</td>
+                    <td>4</td>
+                </tr>
+                
+                <tr>
+                    <td>Fizika 1</td>
+                    <td class="professor-cell senior-professor-cell">Ivica Puljak</td>
+                    <td>4</td>
+                </tr>
+                
+                <tr>
+                    <td>Fizika 1</td>
+                    <td class="professor-cell senior-professor-cell">Ivica Puljak</td>
+                    <td>4</td>
+                </tr>
+                
+            </tbody>
+            
+            <tfoot>
+                <tr>
+                    <td colspan="2">@FESB</td>
+                    <td>2015</td>
+                </tr>
+            </tfoot>
+        </table>
+        
+        
+        <form id="login-form">
+            Username: <input type="text" placeholder="Unesi ime"/> <br/>
+            Password: <input type="password"/> <br/>
+            <input type="button" value="Login"/>
+        </form>
+    
+    </body>
+</html>
