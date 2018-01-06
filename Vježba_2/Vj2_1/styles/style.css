@@ -1,0 +1,108 @@
+body {
+    background-color: #333;
+    color: aliceblue;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+}
+
+#naslov {
+    background-color: #222;
+    border-bottom: 2px solid crimson; 
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 15px 15px;
+}
+
+.container {
+    padding: 0 5%;
+}
+
+h2 {
+    color: crimson;
+}
+
+.uvod {
+    background-color: #222;
+    border-radius: 0 0 20px 20px;
+    padding: 15px;
+    margin-top: 0;
+}
+
+.uvod > strong {
+    border-left: 2px solid #555;
+    border-right: 2px solid #555;
+    color: crimson;
+    padding: 0 0.2em;
+}
+
+.slike {
+    text-align: center;
+    padding: 15px;
+}
+
+.slike > img {
+    border-radius: 5% 25% 5% 25%;
+    margin: 0 5em;
+    transition: transform 0.2s, border-radius 0.4s;
+    vertical-align: middle;
+    width: 300px;
+}
+
+.slike > img:hover {
+    border-radius: 0;
+    transform: scale(1.2);
+}
+
+#zivotopis {
+    float: left;
+    margin-left: 15em;
+}
+
+#predmeti {
+    float: right;
+    margin-right: 15em;
+}
+
+.box {
+    background-color: #ffffa5;
+    box-shadow: 0.1em 0.15em 0.1em #d3d378;
+    color: black;
+    padding: 0 0.8em 0.8em 0.3em;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#login-form {
+    margin-top: 2em;
+}
+
+#login-form input {
+    display: inline-block;
+    margin: 0 0.5em;
+    padding: 0.5em;
+    width: 15em;
+}
+
+#login-form input:last-of-type {
+    border: none;
+    border-radius: 5%;
+    background-color: crimson;
+    color: #222;
+    font-weight: bold;
+    transition: transform 0.2s;
+    width: 7.5em;
+}
+
+#login-form input:last-of-type:hover {
+    background-color: red;
+    border-radius: 10%;
+    color: aliceblue;
+    transform: scale(1.1);
+}
+
+#login-form label {
+    color: crimson;
+    font-style: italic;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head> <!-- META INFORMACIJE O STRANICI -->
+        <meta charset="utf-8">
+        <title>Vježba 2 - PZI (CSS)</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css"/>    
+    </head>
+    
+    <body> <!-- SVE ŠTA SE PRIKAZUJE NA STRANICI-->
+        <h1 id="naslov">Programiranje za Internet - Uvod u HTML</h1>
+        <div class="container">
+        <p class="uvod"> 
+            <strong>Mateo Fuzul</strong> <em>PZI</em>
+            Moji položeni <a href="#predmeti">predmeti</a>.
+            Lorem ipsum dolor sit amet,
+            consectetur <strong>adipiscing</strong> elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in <em>voluptate</em> velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non provident.
+        </p>
+    
+        
+        <!-- samozatvarajući element <element/> jer nema sadržaja-->
+            <div class="slike">
+                <img src="http://www.tzg-biograd.hr/phpthumb/phpThumb.php/?src=/clients/1/gallery/1_137245049583.jpg&hp=600&wl=800&hs=600&aoe=0" alt="Biograd 1"/> 
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Biograd-na-more-1.JPG/1200px-Biograd-na-more-1.JPG" alt="Biograd 2"/>
+            </div>
+        <div id="zivotopis" class="box">
+            <h2>Životopis</h2>
+        
+            <ul>
+                <li>Rođen(a) u <a href="http://www.split.hr/Default.aspx">gradu</a></li>    
+                <li>Završena srednja <a href="http://gav.hr/" target="_blank">škola</a>.</li>    
+                <li>Trenutno 3. godina FESB-a</li>    
+            </ul>
+        </div>
+            
+        <div id="predmeti" class="box">
+        <h2>Položeni predmeti</h2>
+        
+        <table> 
+            <thead>
+                <tr>
+                    <th>Predmet</th> <!-- ćelija zaglavlja -->
+                    <th>Profesor</th>
+                    <th>Ocjena</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>Matematika 1</td>
+                    <td>Josipa Barić</td>
+                    <td>5</td>
+                </tr>
+                
+                <tr>
+                    <td>Fizika 1</td>
+                    <!-- An element can have multiple classes, simply separate them with a space! -->
+                    <td>Ivica Puljak</td>
+                    <td>4</td>
+                </tr>
+                
+                <tr>
+                    <td>Fizika 1</td>
+                    <td>Ivica Puljak</td>
+                    <td>4</td>
+                </tr>
+                
+                <tr>
+                    <td>Fizika 1</td>
+                    <td>Ivica Puljak</td>
+                    <td>4</td>
+                </tr>
+                
+            </tbody>
+            
+            <tfoot>
+                <tr>
+                    <td colspan="2">@FESB</td>
+                    <td>2015</td>
+                </tr>
+            </tfoot>
+        </table>
+        </div> 
+        
+        <div class="clearfix"></div>
+            
+        <form id="login-form">
+            <label for="username">Username: </label><input type="text" placeholder="Enter Username" name="username"/>
+            <label for="password">Password: </label><input type="password" placeholder="Enter Password" name="password"/>
+            <input type="button" value="Login"/>
+        </form>
+    </div>
+    </body>
+</html>

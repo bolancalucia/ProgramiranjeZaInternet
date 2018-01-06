@@ -1,0 +1,109 @@
+html {
+    /*Definicija varijable: --ime*/
+    /*Varijabla se može koristiti u cijelom podstablu
+    ovo elementa -> body je root sadržaja, pa je mogu koristiti svugdi*/
+    --blue: #2d5c88;
+    --light-blue: #abbecf;
+    --white: #ffffff;
+    --gray: #4e4e4e; /*red, #AAAAA, rgb(20, 24, 255), rgba(20, 24, 255, 0.6)*/
+    --light-gray: #d3d3d3;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 5px;
+}
+
+@media screen and (max-width:319px) {
+    /*Ova pravila se aktiviraju samo ako je ekran 
+    browsera manji od 320px*/
+    body {
+        display: none;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /*Čitanje vrijednosti varijable*/
+    color: var(--white);
+    background-color: var(--blue);
+
+    padding: 0.5em;
+        
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 1;
+}
+
+.search-container {
+    background-color: var(--white);
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    width: 100px;
+}
+
+.search-container .search-icon {
+    color: var(--gray);
+    cursor: pointer;
+    user-select: none;
+}
+
+footer {
+    background-color: var(--gray);
+    color: var(--white);
+    padding: 0.5em;
+
+    text-align: center;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+main {
+    display: flex;
+    /*gornja i donja dodane zbog headera i footera
+    koji su fiksirani i prelaze preko main-a*/
+    /*auto za elemente sa širinom znači da browser
+    izračuna iz slobonog prostora marginu da bude centriran*/
+    margin: 60px auto;
+    max-width: 1100px;
+}
+
+main .links-column {
+    /*flex-itemima (djeca flex kontejnera)*/
+    /*nemoj se smanjivati, nemoj rasti, baza je 200px*/
+    flex: 0 0 200px;
+    padding: 0 8px;
+}
+
+main .links-column .links-section {
+    background-color: var(--light-gray);
+    padding: 5px;
+    position: sticky;
+    top: 55px;
+}
+
+@media screen and (max-width: 680px) {
+    main {
+        display: block;
+    }
+    
+    main .links-column {
+        flex: none;
+        padding: 0;
+    }
+}

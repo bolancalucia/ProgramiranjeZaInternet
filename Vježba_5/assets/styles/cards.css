@@ -1,0 +1,53 @@
+#cards-container {
+
+}
+
+#cards-container .card {
+    background-color: var(--light-gray);
+    margin: 5px;
+    padding: 5px;
+
+    /*Da bi .delete-button
+    mogli pozicionirati u gornji, desni kut
+    card-a*/
+    position: relative;
+}
+
+#cards-container .card img {
+    width: 100%;
+}
+
+.card .delete-button {
+    position: absolute;
+    top: -0.5em;
+    right: -0.5em;
+
+    cursor: pointer;
+    user-select: none;
+
+    transition: transform 0.2;
+}
+
+.card .delete-button:hover {
+    transform: scale(1.2);
+}
+
+/*Ako je veličina ekrana BAREM 500px
+aktiviraj ova pravila*/
+@media screen and (min-width:500px){
+    /*želim imati barem 2 kartice u retku*/
+    .card {
+        display: inline-block;
+        vertical-align: top;
+        /*pola širine roditelja - 25px za margine kartica*/
+        width: calc(50% - 25px);
+    }
+}
+
+@media screen and (min-width:850px){
+    /*želim imati barem 3 kartice u retku*/
+    .card {
+        /*trećina širine roditelja - 25px za margine kartica*/
+        width: calc(33% - 25px);
+    }
+}
