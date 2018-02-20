@@ -1,0 +1,73 @@
+@media screen and (min-width: 650px) {
+    .card {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(50% - 25px);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .card {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(32% - 25px);
+    }
+}
+
+#main-fourth {
+    border-style: solid;
+    border-color: var(--dark-green);
+    border-radius: 20px;
+    border-width: 2.5px;
+    padding: 0px 30px;
+    color: var(--gray);
+    margin: 40px auto;
+}
+
+#main-fourth .card {
+    position: relative;
+}
+
+.card {
+    background-color: var(--light-gray);
+    margin: 8px;
+    padding: 8px;
+}
+
+/* postavit da su card u main-fourth centrirane a ne prema livo*/
+
+.main-fourth-name {
+    display: table;
+    margin: 10px auto;
+}
+
+.main-fourth-image {
+    width: 100%;
+}
+
+.main-fourth-button {
+    text-align: center;
+    font-size: large;
+    border-style: solid;
+    border-color: var(--dark-green);
+    border-radius: 8px;
+    border-width: 1px;
+    color: var(--gray);
+    padding: 5px;
+    /* da se botun centrira na sredinu diva, provjeri jel mos to i ovo u imenu drukcije rjesit*/
+    display: table;
+    margin: 5px auto;
+    width: 30%;
+}
+
+.card .delete-button {
+    transition: transform 0.3s;
+    color: var(--gray);
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    top: -0.5em;
+    right: -0.5em;
+}
+
+
