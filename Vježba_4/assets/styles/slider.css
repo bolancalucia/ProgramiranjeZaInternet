@@ -1,0 +1,59 @@
+#main-slider {
+    /*Definiranje nestatičkog roditelja
+    tako da mogu pozicionirati strelice u odnosu na ovaj 
+    element, a ne u odnosu na body */
+    position: relative;
+}
+
+#main-slider .main-slider-image {
+    width: 100%;
+}
+
+#main-slider .slider-arrow {
+    position: absolute;
+    
+    top: 50%;
+    transform:translateY(-50%);
+    
+    font-size: 32px;
+    color: var(--light-gray);
+
+    cursor: pointer;
+    user-select: none;
+}
+
+#main-slider .slider-arrow-left {
+    left: 10px;
+}
+
+#main-slider .slider-arrow-right {
+    right: 10px;
+}
+
+#main-slider nav {
+    display: flex;
+}
+
+#main-slider .thumbnail {
+    margin-right: 2px;
+    transition: transform 0.3s;
+}
+
+#main-slider .thumbnail:last-of-type {
+    margin-right: 0;
+}
+
+#main-slider .thumbnail.selected {
+    border-bottom: 4px solid var(--blue);
+}
+
+#main-slider .thumbnail:not(.selected):hover {
+    border-bottom: 4px solid var(--light-blue);
+    cursor: pointer;
+    
+}
+
+#main-slider nav .thumbnail img {
+    margin-right: 2px;
+    width: 100%;
+}

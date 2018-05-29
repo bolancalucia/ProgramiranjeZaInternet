@@ -1,0 +1,52 @@
+#cards-container {
+    
+}
+
+#cards-container .card {
+    background-color: var(--light-gray);
+    margin: 5px;
+    padding: 5px;
+}
+
+#cards-container .card img {
+    width: 100%;
+}
+
+#cards-container .card {
+    position: relative;
+}
+
+.card .delete-button {
+    transition: transform 0.2s;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    top: -0.5em;
+    right: -0.5em;
+}
+
+.card .delete-button:hover {
+    transform: scale(1.2);
+}
+
+.card .add-button {
+    position: absolute;
+    bottom: 5px; 
+    right: 5px;
+}
+
+@media screen and (min-width: 500px) {
+    .card {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(50% - 25px);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .card {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(32% - 25px);
+    }
+}

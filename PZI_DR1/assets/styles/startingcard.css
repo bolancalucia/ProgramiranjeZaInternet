@@ -1,0 +1,79 @@
+#main-third {
+    border-style: solid;
+    border-color: var(--dark-green);
+    border-radius: 20px;
+    border-width: 1px;
+    padding: 30px 30px;
+    margin: 40px auto;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    /* overflow: auto; */
+}
+
+#main-third #main-third-left {
+    color: var(--gray);
+    display: inline-block;
+    margin: 5px;
+    margin-right: 25px;
+}
+
+#main-third #main-third-right {
+    display: inline-block;
+    width: auto;
+    vertical-align: text-bottom;
+}
+
+#main-third-name {
+    font-size: larger;
+    width: fit-content;
+}
+
+#main-third-description {
+    text-align: justify;
+    max-width: 450px;
+    width: fit-content;
+}
+
+.edit-button,.add-button {
+    text-align: center;
+    font-size: large;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: var(--dark-green);
+    color: var(--gray);
+    padding: 5px;
+    margin: 5px;
+    width: 120px;
+    height: 30px
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: var(--gray);
+    cursor: pointer;
+    user-select: none;
+}
+
+.slider-arrow-left {
+    left: -40px;
+}
+
+.slider-arrow-right {
+    right: -40px;
+}
+
+#main-third-paris {
+    width: 100%;
+}
+
+#main-third-stars {
+    /*margin: 0 135px; radi i ovo*/
+    display: table;
+    margin: 0 auto;
+    width: 35%;
+}
